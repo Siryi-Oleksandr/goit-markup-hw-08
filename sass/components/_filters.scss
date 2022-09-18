@@ -1,0 +1,6 @@
+.filters-list {
+  @extend %list, %mp-none, %flex;
+
+  margin-bottom: 50px;
+  gap: 8px;
+}

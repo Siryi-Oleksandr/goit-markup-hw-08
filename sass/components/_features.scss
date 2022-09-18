@@ -1,0 +1,46 @@
+.section-features {
+  padding-top: $section-padding-gap;
+  padding-bottom: $section-padding-gap;
+}
+
+.section-features__list {
+  @extend %mp-none;
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section-features__item {
+  $item: 4;
+  flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
+}
+
+.section-features__box {
+  @extend %flex;
+
+  margin-bottom: 30px;
+  width: 100%;
+  min-height: 120px;
+
+  background-color: $secondary-bg-color;
+}
+
+.section-features__subtitle {
+  @extend %mp-none;
+
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-features__text {
+  @extend %mp-none;
+
+  font-size: 14px;
+  line-height: 1.71;
+}

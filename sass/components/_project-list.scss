@@ -1,0 +1,23 @@
+.project-list {
+  @extend %list, %mp-none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: $project-grid-gap;
+}
+
+.project-list__item {
+  $item: 3;
+  flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
+}
+
+.project-list__link {
+  @extend %link, %mp-none;
+  display: block;
+  transition: box-shadow $animation;
+
+  &:hover,
+  &focus {
+    box-shadow: $shadow-btn-filters;
+  }
+}

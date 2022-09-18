@@ -1,0 +1,57 @@
+.section-team {
+  padding-top: $section-padding-gap;
+  padding-bottom: $section-padding-gap;
+
+  background-color: $secondary-bg-color;
+}
+
+.section-team__title {
+  @extend %mp-none, %section-title;
+}
+
+.section-team__list {
+  @extend %list, %mp-none;
+
+  display: flex;
+  gap: 30px;
+}
+
+.section-team__item {
+$item: 4;
+  flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
+
+  box-shadow: $team-card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white-bg-color;
+}
+
+.section-team__img {
+  @extend %img;
+}
+
+.section-team__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-team__name {
+  @extend %mp-none;
+
+  margin-bottom: 10px;
+
+  color: $title-txt-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section-team__position {
+  @extend %mp-none;
+
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

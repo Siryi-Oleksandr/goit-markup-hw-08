@@ -1,0 +1,32 @@
+.contacts-list {
+  @extend %list;
+  @extend %mp-none;
+
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts-list__link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-txt-color;
+
+  transition: color $animation, fill $animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.contacts-list__icon {
+  margin-right: 10px;
+}
