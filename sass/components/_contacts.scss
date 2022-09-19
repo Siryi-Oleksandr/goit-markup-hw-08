@@ -5,6 +5,12 @@
     display: block;
   }
 
+  .contacts-list__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
   // margin-left: auto;
   // display: flex;
   // align-items: center;
@@ -31,5 +37,5 @@
 }
 
 .contacts-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
 }
