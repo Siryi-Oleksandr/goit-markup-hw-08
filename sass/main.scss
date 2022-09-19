@@ -1,35 +1,13 @@
-@import 
-    "./utils/variables",
-    "./utils/placeholders",
-    "./utils/body",
-    "./base/reset",
-    "./components/page-header",
-    "./components/logo",
-    "./components/nav",
-    "./components/contacts",
-    "./components/hero",
-    "./components/button",
-    "./components/features",
-    "./components/works",
-    "./components/team",
-    "./components/social",
-    "./components/clients",
-    "./components/footer",
-    "./components/address",
-    "./components/form-subscription",
-    "./components/backdrop",
-    "./components/modal",
-    "./components/btn-close",
-    "./components/form-order",
-    "./components/licence",
-    "./components/button-filters",
-    "./components/section",
-    "./components/filters",
-    "./components/project-thumb",
-    "./components/project-list";
-
-
-
+@import "./base/reset",
+"./utils/variables",
+"./utils/body",
+"./utils/placeholders",
+"./components/page-header",
+"./components/logo",
+"./components/nav",
+"./components/contacts",
+"./components/menu-container",
+"./components/nav-toggle";
 
 
 

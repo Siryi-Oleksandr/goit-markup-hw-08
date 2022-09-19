@@ -1,0 +1,43 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+
+    background-color: teal;
+
+    transform: translateX(100%);
+    transition: transform $animation;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+
+
+.mobile-nav {}
+
+.mobile-nav__list {}
+
+.mobile-nav__item {}
+
+.mobile-nav__link {}
+
+.mobile-nav__link-current {}
+
+.mobile-contacts-list {}
+
+.mobile-contacts-list__item {}
+
+.mobile-contacts-list__link {}
+
+.mobile-socials {}
+
+.mobile-socials__item {}
+
+.mobile-socials__link {}
