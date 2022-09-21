@@ -1,15 +1,5 @@
-@import "./base/reset",
-"./utils/variables",
-"./utils/body",
-"./utils/placeholders",
-"./components/page-header",
-"./components/logo",
-"./components/nav",
-"./components/contacts",
-"./components/menu-container",
-"./components/nav-toggle",
-"./components/section-features";
-
-
-
-
+@import './base/reset', './utils/variables', './utils/body', './utils/placeholders',
+  './components/page-header', './components/logo', './components/nav', './components/contacts',
+  './components/menu-container', './components/nav-toggle', './components/section-features',
+  './components/backdrop', './components/modal', './components/btn-close', './components/form-order',
+  './components/licence', './components/button', './components/hero';
