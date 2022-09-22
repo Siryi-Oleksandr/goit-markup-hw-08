@@ -210,7 +210,11 @@
               <div class="section-works__thumb">
                 <img
                   class="section-works__img"
-                  src="./images/box-1.jpg"
+                  srcset="
+                    ./images/adaptive/desctop/optimized/work-img-1.jpg    1x,
+                    ./images/adaptive/desctop/optimized/work-img@2x-1.jpg 2x
+                  "
+                  src="./images/adaptive/desctop/optimized/work-img-1.jpg"
                   alt="Жінка користується телефоном та ноутбуком"
                   width="370"
                   height="294"
@@ -222,7 +226,11 @@
               <div class="section-works__thumb">
                 <img
                   class="section-works__img"
-                  src="./images/box-2.jpg"
+                  srcset="
+                    ./images/adaptive/desctop/optimized/work-img-2.jpg    1x,
+                    ./images/adaptive/desctop/optimized/work-img@2x-2.jpg 2x
+                  "
+                  src="./images/adaptive/desctop/optimized/work-img-2.jpg"
                   alt="Дизайнер використовує планшет"
                   width="370"
                   height="294"
@@ -234,7 +242,11 @@
               <div class="section-works__thumb">
                 <img
                   class="section-works__img"
-                  src="./images/box-3.jpg"
+                  srcset="
+                    ./images/adaptive/desctop/optimized/work-img-3.jpg    1x,
+                    ./images/adaptive/desctop/optimized/work-img@2x-3.jpg 2x
+                  "
+                  src="./images/adaptive/desctop/optimized/work-img-3.jpg"
                   alt="Чоловік займається програмуванням"
                   width="370"
                   height="294"
@@ -257,12 +269,31 @@
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="section-team__list">
             <li class="section-team__item">
+              <!-- <img
+                class="section-team__img"
+                srcset="
+                  ./images/adaptive/mobile/optimized/team-img-1.jpg     450w,
+                  ./images/adaptive/mobile/optimized/team-img@2x-1.jpg  450w,
+                  ./images/adaptive/tablet/optimized/team-img-1.jpg     354w,
+                  ./images/adaptive/tablet/optimized/team-img@2x-1.jpg  354w,
+                  ./images/adaptive/desctop/optimized/team-img-1.jpg    270w,
+                  ./images/adaptive/desctop/optimized/team-img@2x-1.jpg 270w
+                "
+                sizes="(min-width: 1200px) 270px,  (min-width: 480px) 450px, 100vw"
+                src="./images/adaptive/mobile/optimized/team-img-1.jpg"
+                alt="Ігор Дем'яненко"
+              /> -->
               <img
                 class="section-team__img"
-                src="./images/card-1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/adaptive/desctop/optimized/team-img@2x-1.jpg 270w,
+                  ./images/adaptive/tablet/optimized/team-img@2x-1.jpg  354w,
+                  ./images/adaptive/mobile/optimized/team-img@2x-1.jpg  450w,
+                  ./images/adaptive/mobile/optimized/team-img-1.jpg     450w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/adaptive/mobile/optimized/team-img-1.jpg"
+                alt="Опис зображення для всіх версій"
               />
               <div class="section-team__description">
                 <h3 class="section-team__name">Ігор Дем'яненко</h3>
@@ -323,10 +354,12 @@
             <li class="section-team__item">
               <img
                 class="section-team__img"
-                src="./images/card-2.jpg"
+                srcset="
+                  ./images/adaptive/mobile/optimized/team-img-2.jpg    1x,
+                  ./images/adaptive/mobile/optimized/team-img@2x-2.jpg 2x
+                "
+                src="./images/adaptive/mobile/optimized/team-img-2.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
-                height="260"
               />
               <div class="section-team__description">
                 <h3 class="section-team__name">Ольга Рєпіна</h3>
@@ -387,10 +420,12 @@
             <li class="section-team__item">
               <img
                 class="section-team__img"
-                src="./images/card-3.jpg"
+                srcset="
+                  ./images/adaptive/mobile/optimized/team-img-3.jpg    1x,
+                  ./images/adaptive/mobile/optimized/team-img@2x-3.jpg 2x
+                "
+                src="./images/adaptive/mobile/optimized/team-img-3.jpg"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
               />
               <div class="section-team__description">
                 <h3 class="section-team__name">Микола Тарасов</h3>
@@ -451,10 +486,12 @@
             <li class="section-team__item">
               <img
                 class="section-team__img"
-                src="./images/card-4.jpg"
+                srcset="
+                  ./images/adaptive/mobile/optimized/team-img-4.jpg    1x,
+                  ./images/adaptive/mobile/optimized/team-img@2x-4.jpg 2x
+                "
+                src="./images/adaptive/mobile/optimized/team-img-4.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
-                height="260"
               />
               <div class="section-team__description">
                 <h3 class="section-team__name">Михайло Єрмаков</h3>
@@ -725,7 +762,7 @@
                   <use href="./images/sprite-icons.svg#icon-check-full"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю <a class="licence__link" href="">Умови договору</a>
+              Погоджуюся з розсилкою та приймаю <a class="licence__link" href="">Умови договору</a>.
             </label>
           </div>
 

@@ -1,5 +1,31 @@
-@import './base/reset', './utils/variables', './utils/body', './utils/placeholders',
-  './components/page-header', './components/logo', './components/nav', './components/contacts',
-  './components/menu-container', './components/nav-toggle', './components/section-features',
-  './components/backdrop', './components/modal', './components/btn-close', './components/form-order',
-  './components/licence', './components/button', './components/hero';
+@import './base/reset';
+@import './utils/variables';
+@import './utils/body';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './components/page-header';
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+@import './components/menu-container';
+@import './components/nav-toggle';
+@import './components/section-features';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/btn-close';
+@import './components/form-order';
+@import './components/licence';
+@import './components/button';
+@import './components/hero';
+@import './components/works';
+@import './components/team';
+@import './components/social';
+@import './components/clients';
+@import './components/footer';
+@import './components/address';
+@import './components/form-subscription';
+@import './components/section';
+@import './components/filters';
+@import './components/button-filters';
+@import './components/project-list';
+@import './components/project-thumb';

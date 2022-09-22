@@ -8,7 +8,8 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: $white-bg-color;
-  transform: translateX(100%);
+  transform: translateX(150%);
+  overflow-x: hidden;
   transition: transform $animation;
 }
 
@@ -58,6 +59,11 @@
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: $accent-color;
+
+  @media screen and(max-width: 479px) {
+    font-size: 24px;
+    line-height: calc(34 / 24);
+  }
 }
 
 .mobile-contacts-list__item--noaccent {
@@ -74,6 +80,11 @@
 
 .mobile-socials {
   display: flex;
+
+  @media screen and(max-width: 479px) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .mobile-socials__item {
@@ -85,10 +96,20 @@
   color: $accent-color;
 
   &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    @media screen and(min-width: 480px) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
   &:first-child {
     padding-left: 0;
+  }
+
+  @media screen and(max-width: 479px) {
+    padding-left: 0;
+    $item: 2;
+    flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
+    text-align: left;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 
