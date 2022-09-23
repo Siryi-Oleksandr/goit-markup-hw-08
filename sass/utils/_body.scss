@@ -9,8 +9,6 @@
 .container {
   @extend %container;
 
-  outline: 1px solid red;
-
   width: 100%;
 
   @media screen and (max-width: 319px) {

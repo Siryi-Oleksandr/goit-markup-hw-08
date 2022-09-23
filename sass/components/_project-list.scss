@@ -1,22 +1,35 @@
-@media screen and(min-width: 1200px) {
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $project-grid-gap;
+.project-list__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
-  .project-list__item {
-    $item: 3;
+  @media screen and(min-width: 768px) {
+    $item: 2;
     flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
   }
 
-  .project-list__link {
-    display: block;
-    transition: box-shadow $animation;
+  @media screen and(min-width: 1200px) {
+    $item: 3;
+    flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
+  }
+}
 
-    &:hover,
-    &:focus {
-      box-shadow: $shadow-btn-filters;
-    }
+.project-list__link {
+  display: block;
+  transition: box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-btn-filters;
+  }
+}
+
+.project-list {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
