@@ -4,6 +4,8 @@
   left: 0;
   z-index: 999;
 
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -11,10 +13,12 @@
   transform: translateX(150%);
   overflow-x: hidden;
   transition: transform $animation;
+  pointer-events: none;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  pointer-events: auto;
 }
 
 .nav-toggle__close {
@@ -23,12 +27,12 @@
   right: 15px;
 }
 
-// .mobile-nav {
-// }
-
-.mobile-nav__list {
-  margin-bottom: 302px;
+.mobile-nav {
+  margin-bottom: auto;
 }
+
+// .mobile-nav__list {
+// }
 
 .mobile-nav__item {
   font-weight: 500;

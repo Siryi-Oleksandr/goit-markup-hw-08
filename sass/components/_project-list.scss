@@ -6,6 +6,7 @@
   }
 
   @media screen and(min-width: 768px) {
+    display: flex;
     $item: 2;
     flex-basis: calc((100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item});
   }
@@ -23,6 +24,11 @@
   &:hover,
   &:focus {
     box-shadow: $shadow-btn-filters;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
